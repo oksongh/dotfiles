@@ -1,0 +1,28 @@
+# from bashrc
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+alias ll='ls -alF'
+
+# util
+alias today='date -d today +%y%m%d'
+
+alias 'code.'='code .'
+
+alias hisrec='history|tail'
+alias hisgrep='history|grep'
+
+# if [ -f "${HOME}/.cargo/evcxr" ]; then
+	alias rustrepl='evcxr'
+# fi
+
+trash(){
+	mv -i "$1" ~/.local/share/Trash/files
+}
