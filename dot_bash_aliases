@@ -15,6 +15,7 @@ alias ll='ls -alF'
 alias today='date -d today +%y%m%d'
 
 alias 'code.'='code .'
+alias emacs='emacs -nw'
 
 alias hisrec='history|tail'
 alias hisgrep='history|grep'
